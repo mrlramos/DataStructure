@@ -7,9 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1_SimpleQueue", "1_SimpleQu
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2_SimpleManualQueue", "2_SimpleManualQueue\2_SimpleManualQueue.csproj", "{2E131F94-42FC-4498-AB48-CBE36B2E3024}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3_SimpleStack", "3_SimpleStack\3_SimpleStack.csproj", "{B93EAEFE-4ABE-4352-A04B-F9082B918292}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3_SimpleStack", "3_SimpleStack\3_SimpleStack.csproj", "{B93EAEFE-4ABE-4352-A04B-F9082B918292}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4_SimpleManualStack", "4_SimpleManualStack\4_SimpleManualStack.csproj", "{A745BA3B-2677-44DA-AB8D-0329065A454F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "4_SimpleManualStack", "4_SimpleManualStack\4_SimpleManualStack.csproj", "{A745BA3B-2677-44DA-AB8D-0329065A454F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5_QuickSort", "5_QuickSort\5_QuickSort.csproj", "{606F2393-04C5-4BFC-AD11-107A43B65688}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{A745BA3B-2677-44DA-AB8D-0329065A454F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A745BA3B-2677-44DA-AB8D-0329065A454F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A745BA3B-2677-44DA-AB8D-0329065A454F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{606F2393-04C5-4BFC-AD11-107A43B65688}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{606F2393-04C5-4BFC-AD11-107A43B65688}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{606F2393-04C5-4BFC-AD11-107A43B65688}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{606F2393-04C5-4BFC-AD11-107A43B65688}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

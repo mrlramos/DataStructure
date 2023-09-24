@@ -12,3 +12,6 @@ A program that implements a simple stack in C# using Stack class
 
 4 - SimpleManualStack:
 A program that implements a simple manual stack in C#
+
+5 - QuickSort:
+A program that implements QuickSort search algorithm
