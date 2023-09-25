@@ -1,5 +1,5 @@
 # DataStructure
-Repository to practice some algorithm implementation
+Repository to practice some algorithm implementation on console application. Version: ".NET 6" RuntimeFrameworkVersion: "6.0.22" Tests: xUnit 2.4.1
 
 1 - SimpleQueue: 
 A program that implements a simple queue in C# using Queue class

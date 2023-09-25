@@ -1,48 +1,20 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-Queue<string> queue = new();
+using _1_SimpleQueue;
 
-ListAll();
-ListCount();
+SimpleQueue simpleQueue = new();
 
-Insert("Marlon");
+Console.WriteLine(simpleQueue.ListCount());
 
-ListAll();
-ListCount();
+simpleQueue.Insert("Marlon");
+simpleQueue.Insert("Pedro");
 
-Remove();
+Console.WriteLine(simpleQueue.ToString());
+Console.WriteLine(simpleQueue.ListCount());
 
-ListAll();
-ListCount();
+simpleQueue.Remove();
+Console.WriteLine(simpleQueue.ToString());
+Console.WriteLine(simpleQueue.ListCount());
+
 
 Console.ReadLine();
-
-void Insert(string person)
-{
-    queue.Enqueue(person);
-}
-
-void Remove()
-{
-    queue.Dequeue();
-}
-
-void ListAll()
-{
-    if (queue.Count > 0)
-    {
-        foreach (string person in queue)
-        {
-            Console.WriteLine(person);
-        }
-    } 
-    else
-    {
-        Console.WriteLine("Queue empty");
-    }
-}
-
-void ListCount()
-{
-    Console.WriteLine(queue.Count);
-}
