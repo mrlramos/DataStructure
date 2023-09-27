@@ -1,66 +1,22 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-string[] queue = Array.Empty<string>();
-short count = 0;
+using _2_SimpleManualQueue;
 
-ListAll();
-ListCount();
+SimpleManualQueue simpleManualQueue = new();
 
-Insert("Marlon");
+Console.WriteLine(simpleManualQueue.ListAll());
+Console.WriteLine(simpleManualQueue.ListCount());
 
-ListAll();
-ListCount();
+simpleManualQueue.Insert("Marlon");
+simpleManualQueue.Insert("Dax");
+simpleManualQueue.Insert("Lygia");
 
-Remove();
+Console.WriteLine(simpleManualQueue.ListAll());
+Console.WriteLine(simpleManualQueue.ListCount());
 
-ListAll();
-ListCount();
+Console.WriteLine(simpleManualQueue.Remove());
+
+Console.WriteLine(simpleManualQueue.ListAll());
+Console.WriteLine(simpleManualQueue.ListCount());
 
 Console.ReadLine();
-
-void Insert(string person)
-{
-    Array.Resize(ref queue, ++count);
-    queue[count - 1] = person;
-}
-
-void Remove()
-{
-    if (count == 0)
-    {
-        throw new InvalidOperationException($"Queue empty");
-    }
-
-    string elementRemoved = queue[0];
-
-    if (count > 1)
-    {
-        for (short i = 0; i < count; i++)
-        {
-            queue[i] = queue[i + 1];
-        }
-    }  
-
-    Array.Resize(ref queue, --count);
-    Console.WriteLine($"Element removed {elementRemoved}");
-}
-
-void ListAll()
-{
-    if (queue.Length > 0)
-    {
-        for (short i = 0; i < queue.Length; i++)
-        {
-            Console.WriteLine(queue[i]);
-        }
-    }
-    else
-    {
-        Console.WriteLine("Queue empty");
-    }
-}
-
-void ListCount()
-{
-    Console.WriteLine(queue.Length);
-}
