@@ -50,7 +50,7 @@ namespace _2_SimpleManualQueue
             }
             else
             {
-                return "Empty";
+                return string.Empty;
             }
             // return queue.Length > 0 ? queue : Array.Empty<string>();
         }
