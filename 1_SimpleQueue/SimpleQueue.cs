@@ -6,12 +6,12 @@ namespace _1_SimpleQueue
     {
         Queue<string> queue = new();
 
-        public void Insert(string person)
+        internal void Insert(string person)
         {
             queue.Enqueue(person);
         }
 
-        public bool Remove()
+        internal bool Remove()
         {
             if (queue.Count > 0)
             {
@@ -21,12 +21,12 @@ namespace _1_SimpleQueue
             return false;
         }
 
-        public List<string> ListAll()
+        internal List<string> ListAll()
         {
             return queue.ToList();
         }
 
-        public short ListCount()
+        internal short ListCount()
         {
             return (short)queue.Count;
         }

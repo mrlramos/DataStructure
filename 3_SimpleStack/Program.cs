@@ -1,53 +1,21 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-Stack<double> stack = new();
+using _3_SimpleStack;
 
-IsEmpty();
-Peek();
+SimpleStack simpleStack = new();
 
-Push(74.504);
-Push(1.73);
+Console.WriteLine(simpleStack.IsEmpty());
+Console.WriteLine(simpleStack.Peek());
 
-IsEmpty();
-Peek();
+simpleStack.Push(74.504);
+simpleStack.Push(1.73);
 
-Pop();
+Console.WriteLine(simpleStack.IsEmpty());
+Console.WriteLine(simpleStack.Peek());
 
-IsEmpty();
-Peek();
+simpleStack.Pop();
+
+Console.WriteLine(simpleStack.IsEmpty());
+Console.WriteLine(simpleStack.Peek());
 
 Console.ReadLine();
-
-void Push(double number)
-{
-    stack.Push(number);
-}
-
-void Pop()
-{
-    stack.Pop();
-}
-
-void Peek()
-{
-    if (stack.Count != 0)
-    {
-        Console.WriteLine($"{stack.First()}");
-    }
-    else
-    {
-        Console.WriteLine("Stack empty");
-    }
-}
-
-void IsEmpty()
-{
-    if (stack.Count == 0)
-    {
-        Console.WriteLine($"Stack empty");
-    }
-    else
-    {
-        Console.WriteLine("The stack contains data");
-    }
-}
