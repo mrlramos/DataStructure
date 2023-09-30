@@ -9,9 +9,17 @@
             stack.Push(number);
         }
 
-        internal void Pop()
+        internal bool Pop()
         {
-            stack.Pop();
+            if (stack.Count > 0)
+            {
+                stack.Pop();
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
         internal double? Peek()
